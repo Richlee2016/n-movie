@@ -1,18 +1,16 @@
-import { Controller } from 'egg';
+import { Controller } from 'egg'
 
 /**
  * Test Service
  */
 export default class OnlineController extends Controller {
-
   /**
-   * sayHi to you
-   * @param name - your name
+   * 在线电影 代理搜索
+   * @param wd - 电影关键字
    */
-  public async search () {
+  public async search(){
     const ctx = this.ctx
-    // const res = await ctx.service.crawler.proxyOnlineSearch(wd)
-    // return res
-    ctx.body = 1;
+    const { wd } = ctx.query
+    ctx.body = await ctx.service.crawler.proxyOnlineSearch(wd)
   }
 }

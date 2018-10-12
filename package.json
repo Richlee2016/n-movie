@@ -24,24 +24,34 @@
     "clean": "ets clean"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "egg": "^2.6.1",
     "egg-mongoose": "^3.1.0",
     "egg-scripts": "^2.6.0",
+    "egg-validate": "^2.0.1",
     "egg-view-nunjucks": "^2.2.0"
   },
   "devDependencies": {
+    "@types/cheerio": "^0.22.9",
+    "@types/lodash": "^4.14.117",
     "@types/mocha": "^2.2.40",
     "@types/node": "^7.0.12",
+    "@types/puppeteer": "^1.9.0",
     "@types/supertest": "^2.0.0",
+    "@types/validator": "^9.4.2",
     "autod": "^3.0.1",
     "autod-egg": "^1.1.0",
     "egg-bin": "^4.6.2",
     "egg-ci": "^1.8.0",
     "egg-mock": "^3.16.0",
     "egg-ts-helper": "^1.11.0",
+    "lodash": "^4.17.11",
+    "puppeteer": "^1.9.0",
     "tslib": "^1.9.0",
     "tslint": "^4.0.0",
-    "typescript": "^3.0.0"
+    "tslint-config-prettier": "^1.15.0",
+    "typescript": "^3.0.0",
+    "validator": "^10.8.0"
   },
   "engines": {
     "node": ">=8.9.0"
